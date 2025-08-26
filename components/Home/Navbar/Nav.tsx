@@ -9,10 +9,14 @@ import { HiBars3BottomRight } from 'react-icons/hi2'
 
 
 
+type Props = {
+  openNav:() => void;
+}
 
 
 
-const Navbar = () => {
+
+const Navbar = ({openNav}:Props) => {
 
   const [navBg, setNavBg] = useState(false);
 
@@ -35,7 +39,7 @@ const Navbar = () => {
         </div>
 
   {/* Links & Buttons */}
-        <div className=" lg:flex items-center space-x-10">
+        <div className="hidden  lg:flex items-center space-x-10">
         {navLinks.map((link) => {
           return(
             <Link
@@ -51,7 +55,7 @@ const Navbar = () => {
         })}
 
            {/* contact us button */}
-             <div className='flex items-center rounded-4xl py-2 pl-2 pr-4 bg-sky-100'>
+             <div className='flex items-center rounded-3xl py-2 pl-2 pr-4 bg-sky-100'>
             <button className=" lg:block px-6 py-2 bg-sky-500 text-white rounded-3xl  hover:bg-sky-500">
               Contact Us
            <Image width={20} height={20} src="/images/arrow-right-circle.png" alt="arrow" className='w-6 h-6 inline-block ml-2' />
@@ -69,6 +73,8 @@ const Navbar = () => {
                 </div>
         </div>
       
+                {/* Burger menu */}
+              <HiBars3BottomRight onClick={openNav} className='w-8 h-8 cursor-pointer text-emerald-500 lg:hidden' />
        
         </div>
        

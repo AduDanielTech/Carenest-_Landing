@@ -26,13 +26,13 @@ const TestimonialCards = ({tname,trole,tavatar,text ,i}:Props) => {
                     <Image src={tavatar} alt={tname} width={100} height={100} className="w-full h-full object-cover" />
                   </div>
 
-                  <div className="flex-1">
+                  <div className="flex-1  ">
                     <div className={`${nunito.className}font-semibold text-gray-800`}>{tname}</div>
-                    <div className="text-sm text-sky-400">{trole}</div>
+                    <div className="text-sm mt-[4px] text-sky-400">{trole}</div>
                   </div>
 
                   {/* quote icon */}
-                  <Image src="/images/quote-testimonial.png" alt='image' width={100} height={100} className="ml-4 w-[40] h-[40]" />
+                  <Image src="/images/quote-testimonial.png" alt='image' width={100} height={100} className="ml-4 w-[3rem] h-[3rem]" />
                   
                 </div>
               </article>

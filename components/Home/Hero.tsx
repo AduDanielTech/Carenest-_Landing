@@ -20,7 +20,7 @@ const Hero = () => {
             </p> 
             {/* buttons */}
             <div className="mt-8 flex flex-col sm:flex-row w-fit sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <button className="px-6 py-3 bg-sky-500 text-white rounded-4xl shadow hover:bg-sky-400">
+                <button className="px-6 py-3 bg-sky-500 text-white rounded-[30px] shadow hover:bg-sky-400">
                     Book an Appointment
                 </button>
             </div>
@@ -29,20 +29,21 @@ const Hero = () => {
         </div> 
         <div className="mx-auto hidden xl:block " 
         data-aos-delay="150"
-        data-aos="zoom-in">
-                <Image src="/images/hero.png" alt='image' width={1000} height={1000} className='w-[100%] h-[90vh] cursor-pointer text-white'/>
+        data-aos="zoom-in flex items-center ">
+                <Image src="/images/hero.png" alt='image' width={1000} height={1000}
+                 className='w-[100%] h-[90vh]  cursor-pointer transform translate-y-[6rem] text-white'/>
             </div>
       </div>
-      <div className="absolute top-30 right-40 flex items-center">
-        <Image src="/images/fl-hero.png" alt="scroll" width={100} height={100} className='w-35 h-40 ' />
+      <div className="absolute top-40 right-40 hidden lg:flex  items-center">
+        <Image src="/images/fl-hero.png" alt="scroll" width={1000} height={1000} className='w-[8rem] h-30 ' />
       </div>
-      <div className="absolute bottom-30 right-145 flex items-center">
-        <Image src="/images/hero-stats.png" alt="scroll" width={100} height={100} className='w-70 h-17 ' />
+      <div className="absolute bottom-[20%] right-[36%] hidden lg:flex items-center">
+        <Image src="/images/hero-stats.png" alt="scroll" width={1000} height={1000} className='w-[15rem] h-25 ' />
       </div>
       {/* Stats card overlapping bottom */}
         <div className={`relative ${nunito.className}`}>
           <div className="container mx-auto px-6 lg:px-12">
-            <div className="mx-auto max-w-4xl py-7  bg-white rounded-4xl shadow-xl transform -translate-y-[-10] p-6">
+            <div className="mx-auto max-w-4xl py-7 bg-white rounded-[30px] shadow-xl shadow-sky-100 transform -translate-y-[-10] p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div className='border-r border-gray-500 px-2'   >
                   <div className="text-4xl font-bold text-emerald-400 border-r-black">10+</div>

@@ -46,7 +46,7 @@ const Contact = () => {
     <option>Specialized Care</option>
   </select>
   <span className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-white">
-    <Image src="/images/chevron-down.png" alt="doctor"  width={100} height={100}  className="w-[10] h-[5] " />
+    <Image src="/images/chevron-down.png" alt="doctor"  width={100} height={100}  className="w-[15px] h-[7px] " />
   </span>
 </div>
                        

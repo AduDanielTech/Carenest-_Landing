@@ -5,6 +5,7 @@ import Provider from "@/components/Hoc/Provider";
 import Footer from "@/components/Home/Footer";
 import ScrollToTop from "@/components/Helper/ScrollToTop";
 import Navbar from "@/components/Home/Navbar/Nav";
+import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
 
  const font = Merriweather({
@@ -28,7 +29,7 @@ export default function RootLayout({
         className={`${font.className}  antialiased`}
       > 
       <Provider>
-        <Navbar />
+        <ResponsiveNav />
         {children}
         <Footer />
        {/*  

@@ -39,7 +39,7 @@ const Team = () => {
 
            <TopHeading green='WHY CHOOSE US' heading='Our Expert Team'/>
 
-           <div className="flex items-center justify-center w-[100%] mt-15 gap-10">
+           <div className="flex items-center justify-center w-[100%] mt-[2rem] gap-10">
             {
                 team.map((person, index) => (
                   <div className="h-[350px] w-[20%] relative group" key={index}>
@@ -50,8 +50,15 @@ const Team = () => {
       height={100} 
       className='h-[100%] w-[100%] mr-7 rounded-3xl'
     />
-    <div className="absolute grid place-content-center top-0 bottom-0 w-full h-full rounded-3xl bg-gradient-to-b from-transparent via-transparent via-[60%] to-sky-400 to-[100%] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-300">
-      <div className="absolute left-1/2 bottom-[50px] -translate-x-1/2 w-[80%] h-fit py-2 rounded-2xl flex flex-col items-center bg-white">
+    <div className="absolute grid place-
+    content-center top-0 bottom-0 w-full h-full
+     rounded-3xl bg-gradient-to-b from-transparent 
+     via-transparent via-[60%] to-sky-400 to-[100%] 
+     opacity-0 pointer-events-none group-hover:opacity-100 
+     group-hover:pointer-events-auto transition-opacity duration-300">
+      <div className="absolute left-1/2 bottom-[50px] -translate-x-1/2 
+      w-[80%] h-fit py-2 rounded-2xl flex flex-col items-center bg-white">
+
         <h2 className={`${nunito.className}text-[1rem] text-sky-500`}>{person.name}</h2>
         <p className='text-[0.7rem]'>{person.title}</p>
       </div>
