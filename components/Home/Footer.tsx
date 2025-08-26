@@ -33,6 +33,7 @@ const Footer = () => {
                     height={100}
                     className='w-40 h-20 object-contain'
                     />
+                    
                 </div>
                 <div className="w-8 h-8 text-white flex items-center justify-center flex-col rounded-full ">
                     <Image  
