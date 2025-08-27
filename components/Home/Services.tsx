@@ -45,20 +45,20 @@ const Services = () => {
     <div className='flex items-center flex-col justify-between px-10 mb-20' >
         <TopHeading green='SERVICES' heading='Comprehensive Medical Services'/>
             <div className="flex items-center w-[100%]  mt-10"  >
-                <div className="flex items-center justify-center ">
+                <div className="flex items-center sm:hidden  justify-center ">
                     <Image src="/images/service-arrow-left.png" alt='image' width={100} height={100} className='w-[80] h-[40] cursor-pointer text-white'/>
                 </div>
-                            <div className='flex items-center mx-9 gap-8'>
+                            <div className='flex flex-col md:flex-row items-center mx-9 gap-4 md:gap-8'>
 
                            
     {servicesData.map((service, index) => (
   <div
     key={index}
-    className="w-full sm:w-[70%] mx-auto bg-sky-50 rounded-2xl p-6 flex flex-col gap-6 h-[520px] max-h-[620px]" // static height
+    className="w-full sm:w-[70%] mx-auto bg-sky-50 rounded-2xl p-6 flex flex-col gap-6 md:h-[400px] h-[520px] max-h-[620px]" 
   >
     <div className="flex items-center gap-4">
       {service.icon}
-      <h2 className={`${nunito.className} text-[1.2rem] font-semibold`}>{service.title}</h2>
+      <h2 className={`${nunito.className} text-[1.2rem] lg:text-[1.2rem] xl:text-[1.2rem] md:text-[1rem] font-semibold`}>{service.title}</h2>
     </div>
 
     <div className="w-full flex-1 flex flex-col">
@@ -78,7 +78,7 @@ const Services = () => {
     </div>
 
     {/* description */}
-    <p className="text-gray-600">{service.description}</p>
+    <p className="text-gray-600 sm:text-[0.8rem]">{service.description}</p>
 
     {/* link / CTA */}
     <div className="flex items-center justify-between">
@@ -88,7 +88,7 @@ const Services = () => {
 ))}
 
                          </div>
-                <div  className="flex items-center  h-[100%]">
+                <div  className="flex items-center sm:hidden  h-[100%]">
                     <Image src="/images/service-arrow-right.png" alt='image' width={100} height={100} className='w-[80] h-[40]  cursor-pointer text-white'/>
                 </div>
             </div>

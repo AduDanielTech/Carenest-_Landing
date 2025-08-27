@@ -39,10 +39,10 @@ const Team = () => {
 
            <TopHeading green='WHY CHOOSE US' heading='Our Expert Team'/>
 
-           <div className="flex items-center justify-center w-[100%] mt-[2rem] gap-10">
+           <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center w-full mt-[2rem] gap-6 md:gap-10">
             {
                 team.map((person, index) => (
-                  <div className="h-[350px] w-[20%] relative group" key={index}>
+                  <div className="h-[250px] md:h-[250px] lg:h-[350px]  md:w-full lg:w-full relative group" key={index}>
     <Image 
       src={`${person.image}`} 
       alt='image' 
@@ -62,8 +62,8 @@ const Team = () => {
         <h2 className={`${nunito.className}text-[1rem] text-sky-500`}>{person.name}</h2>
         <p className='text-[0.7rem]'>{person.title}</p>
       </div>
-      <div className="text-2xl flex text-white items-center absolute left-1/2 bottom-[20px] -translate-x-1/2 ">
-        <a href={person.link} className='mr-2 text-[0.8rem]'>
+      <div className="text-[0.6rem] w-fit md:text-1rem lg:text-[1rem] flex text-white items-center absolute left-1/2 bottom-[20px] -translate-x-1/2 ">
+        <a href={person.link} className='mr-2 '>
           Doctors Profile
         </a>
         <span>

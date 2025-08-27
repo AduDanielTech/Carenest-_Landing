@@ -32,27 +32,26 @@ const Navbar = ({openNav}:Props) => {
   }, [])
   return (
     <div className={`transition-all ${navBg ? "bg-white shadow-lg" : ' fixed' } duration-200 h-[12vh] z-[100] fixed w-full  bg-white`}>
-      <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] mx-auto'>
+      <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] md:mx-[2rem] lg:mx-[4rem]'>
         {/* LOGO */}
         <div className=""> 
           <Image width={100} height={100} src="/images/logo.png" alt="logo" className='w-40 h-40 object-contain' /> 
         </div>
 
   {/* Links & Buttons */}
-        <div className="hidden  lg:flex items-center space-x-10">
-        {navLinks.map((link) => {
-          return(
-            <Link
-            href={link.url}
-            key={link.id}
-            className=" hover:text-green-300 font-semibold transition-all duration-200">
-              <p>{link.label}
-                
-              </p>
-            </Link>
-          
-          )
-        })}
+        <div className="hidden  lg:flex items-center space-x-6">
+         {navLinks.map((link) => (
+    <Link
+      href={link.url}
+      key={link.id}
+      className="hover:text-green-300  transition-all duration-200"
+    >
+      <p className=" md:text-base lg:text-lg
+        text-[0.7rem]    
+      
+      ">{link.label}</p>
+    </Link>
+  ))}
 
            {/* contact us button */}
              <div className='flex items-center rounded-3xl py-2 pl-2 pr-4 bg-sky-100'>

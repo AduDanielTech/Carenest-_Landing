@@ -12,8 +12,8 @@ const Contact = () => {
    <section className="max-w-7xl mx-auto px-6 py-7 relative">
       <div className="bg-sky-400 rounded-4xl p-8 lg:p-12  ">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-                  <div className="lg:col-span-4  flex justify-center  lg:justify-start h-[100%]">                     
-                     <Image src="/images/contact-us.png" alt="doctor"  width={100} height={100}  className="w-[27%] h-[70vh] absolute top-[-60] " />
+                  <div className="lg:col-span-4 hidden lg:flex justify-center  lg:justify-start h-[100%]">                     
+                     <Image src="/images/contact-us.png" alt="doctor"  width={100} height={100}  className="w-[27%] h-[70vh] absolute top-[-3.9rem] " />
                   </div>
 
             {/* Form */}
