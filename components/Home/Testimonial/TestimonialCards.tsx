@@ -16,7 +16,7 @@ import React from 'react'
 const TestimonialCards = ({tname,trole,tavatar,text ,i}:Props) => {
   return (
     <div key={i} className="px-2 mb-20">
-              <article className="bg-sky-50 flex flex-col justify-between rounded-2xl p-8 h-[280px] shadow-sm">
+              <article className="bg-sky-50 flex flex-col justify-between rounded-2xl p-8 h-[fit] md:h-[280px] shadow-sm">
                 <p className="text-gray-700 leading-relaxed mb-6">{text}</p>
 
                 <div className="flex items-center mb-7">

@@ -57,7 +57,7 @@ const Navbar = ({openNav}:Props) => {
              <div className='flex items-center rounded-3xl py-2 pl-2 pr-4 bg-sky-100'>
             <button className=" lg:block px-6 py-2 bg-sky-500 text-white rounded-3xl  hover:bg-sky-500">
               Contact Us
-           <Image width={20} height={20} src="/images/arrow-right-circle.png" alt="arrow" className='w-6 h-6 inline-block ml-2' />
+               <Image width={20} height={20} src="/images/arrow-right-circle.png" alt="arrow" className='w-6 h-6 inline-block ml-2' />
             </button>
 
              </div>
