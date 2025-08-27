@@ -17,7 +17,10 @@ const About = ({greentext,textOrder,title,imageOrder,}:Props) => {
   return (
     <div className='w-[80%] mx-auto mt-[8rem] grid items-center pb-20 grid-cols=1 lg:grid-cols-2 gap-12  md:mb-6'>
       {/* text content */}
-      <div className={`${textOrder} h-[90%]`}>
+      <div className={`${textOrder} h-[90%]`}
+      data-aos-delay="150"
+        data-aos="fade-up"
+      >
          <div>
             <h3 className="text-emerald-400 font-semibold"> 
               <span className='tracking-[-0.1rem] mr-3'>
@@ -43,8 +46,8 @@ const About = ({greentext,textOrder,title,imageOrder,}:Props) => {
                       We are a team of dedicated medical practitioners committed to delivering personalized care.
                     </p>
                     <div className='flex'>
-                      <Image src="/images/arrow-left-g.png" alt='image' width={100} height={100} className='w-[40px] h-[20px] mt-8 mr-2 cursor-pointer text-white'/>
-                      <Image src="/images/arrow-right.png" alt='image' width={100} height={100} className='w-[40px] h-[20px] mt-8 mr-2 cursor-pointer text-white'/>
+                      <Image src="/images/arrow-left-g.png" alt='image' width={100} height={100} className='w-[40] h-[20] mt-8 mr-2 cursor-pointer text-white'/>
+                      <Image src="/images/arrow-right.png" alt='image' width={100} height={100} className='w-[40] h-[20] mt-8 mr-2 cursor-pointer text-white'/>
                     </div>
                   </div>
               <div>
@@ -55,7 +58,11 @@ const About = ({greentext,textOrder,title,imageOrder,}:Props) => {
       
       </div>
                  {/*image  */}
-      <div className={`${imageOrder}`}>
+      <div className={`${imageOrder}`}
+       data-aos-delay="100"
+        data-aos="fade-up "
+      
+      >
         <Image src="/images/about1.png"  alt="image" width={380} height={380} className='w-[100%] h-[100%] mr-2 cursor-pointer text-white'/>
       </div>
     </div>

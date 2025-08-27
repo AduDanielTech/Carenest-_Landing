@@ -31,15 +31,15 @@ const Navbar = ({openNav}:Props) => {
     return ()=> removeEventListener("scroll", handler)
   }, [])
   return (
-    <div className={`transition-all ${navBg ? "bg-white shadow-lg" : ' fixed' } duration-200 h-[12vh] z-[100] fixed w-full  bg-white`}>
-      <div className='flex items-center h-full justify-between sm:w-[80%] w-[90%] md:mx-[2rem] lg:mx-[4rem]'>
+    <div className={`transition-all ${navBg ? "bg-white shadow-lg" : ' fixed' } duration-200 h-[12vh] z-[100] fixed w-full px-[2rem] md:px-[1rem] bg-white`}>
+      <div className='flex items-center h-full justify-between w-full md:w-[90%]  md:mx-[2rem] '>
         {/* LOGO */}
         <div className=""> 
           <Image width={100} height={100} src="/images/logo.png" alt="logo" className='w-40 h-40 object-contain' /> 
         </div>
 
   {/* Links & Buttons */}
-        <div className="hidden  lg:flex items-center space-x-6">
+        <div className="hidden justify-between lg:flex items-center space-x-6">
          {navLinks.map((link) => (
     <Link
       href={link.url}
@@ -66,7 +66,7 @@ const Navbar = ({openNav}:Props) => {
                 <Image width={20} height={20} src="/images/search-icon.png" alt="search" className='w-6 h-6 cursor-pointer text-white' />
                 {/* globe */}
                 <div className='flex items-center space-x-2'> 
-                <Image width={200} height={200} src="/images/globe-icon.png" alt="globe" className='w-6 h-6 cursor-pointer ' />
+                <Image width={1000} height={1000} src="/images/globe-icon.png" alt="globe" className='w-6 h-6 cursor-pointer ' />
                 <p className='text-gray-600'>ENG</p>
                 <Image width={20} height={20} src="/images/chevron-down-icon.png" alt="icon"  className='w-4 h-4 mr-2 cursor-pointer text-white' />
                 </div>

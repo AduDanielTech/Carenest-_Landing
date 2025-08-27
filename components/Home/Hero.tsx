@@ -29,7 +29,7 @@ const Hero = () => {
         </div> 
         <div className="mx-auto hidden xl:block " 
         data-aos-delay="150"
-        data-aos="zoom-in   lg:flex items-center ">
+        data-aos="zoom-in ">
                 <Image src="/images/hero.png" alt='image' width={1000} height={1000}
                  className='w-[100%] h-[90vh]  cursor-pointer transform translate-y-[6rem] text-white'/>
             </div>
@@ -46,7 +46,10 @@ const Hero = () => {
     className='w-[8rem] h-30'
   />
 </div>
-      <div className="absolute bottom-[20%] right-[36%]  hidden xl:flex items-center">
+      <div className="absolute bottom-[20%] right-[36%]  hidden xl:flex items-center"
+       data-aos-delay="150"
+        data-aos="fade-in"
+      >
         <Image src="/images/hero-stats.png" 
         alt="scroll" 
         width={1000} 
@@ -54,7 +57,10 @@ const Hero = () => {
         className='w-[15rem] h-25 ' />
       </div>
       {/* Stats card overlapping bottom */}
-        <div className={`relative ${nunito.className}`}>
+        <div className={`relative ${nunito.className}`}
+         data-aos-delay="100"
+        data-aos="fade-in"
+        >
           <div className="container mx-auto px-6 lg:px-12">
             <div className="mx-auto max-w-4xl py-7 bg-white rounded-[30px] shadow-xl shadow-sky-100 transform -translate-y-[-10] p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -62,7 +68,7 @@ const Hero = () => {
                   <div className="text-4xl font-bold text-emerald-400 border-r-black">10+</div>
                   <div className={`${font.className}text-0.5xs mt-2 text-gray-500`}>Years of experience</div>
                 </div>
-                <div className='border-r border-gray-500 px-2'   >
+                <div className='border-r md:border-gray-500 px-2'   >
                   <div className="text-4xl font-bold text-emerald-400">90%</div>
                   <div className={`${font.className}text-0.5xs mt-2 lg:text-gray-500` }>Patient satisfaction</div>
                 </div>

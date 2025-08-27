@@ -42,10 +42,10 @@ const servicesData  = [
 
 const Services = () => {
   return (
-    <div className='flex items-center flex-col justify-between px-10 mb-20' >
+    <div className='flex items-center flex-col justify-between px-3 md:px-10 b-20' >
         <TopHeading green='SERVICES' heading='Comprehensive Medical Services'/>
             <div className="flex items-center w-[100%]  mt-10"  >
-                <div className="flex items-center sm:hidden  justify-center ">
+                <div className="hidden md:flex  items-center   justify-center ">
                     <Image src="/images/service-arrow-left.png" alt='image' width={100} height={100} className='w-[80] h-[40] cursor-pointer text-white'/>
                 </div>
                             <div className='flex flex-col md:flex-row items-center mx-9 gap-4 md:gap-8'>
@@ -54,7 +54,9 @@ const Services = () => {
     {servicesData.map((service, index) => (
   <div
     key={index}
-    className="w-full sm:w-[70%] mx-auto bg-sky-50 rounded-2xl p-6 flex flex-col gap-6 md:h-[400px] h-[520px] max-h-[620px]" 
+     data-aos-delay={index*100}
+        data-aos="fade-up"
+    className="w-full sm:w-[70%] mx-auto bg-sky-50 rounded-2xl p-6 flex flex-col gap-6  md:h-[400px] lg:h-[529px]" 
   >
     <div className="flex items-center gap-4">
       {service.icon}
@@ -88,7 +90,7 @@ const Services = () => {
 ))}
 
                          </div>
-                <div  className="flex items-center sm:hidden  h-[100%]">
+                <div  className=" items-center hidden md:flex  h-[100%]">
                     <Image src="/images/service-arrow-right.png" alt='image' width={100} height={100} className='w-[80] h-[40]  cursor-pointer text-white'/>
                 </div>
             </div>

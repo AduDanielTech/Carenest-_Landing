@@ -42,7 +42,10 @@ const Team = () => {
            <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-center w-full mt-[2rem] gap-6 md:gap-10">
             {
                 team.map((person, index) => (
-                  <div className="h-[250px] md:h-[250px] lg:h-[350px]  md:w-full lg:w-full relative group" key={index}>
+                  <div className="h-[200px] md:h-[250px] lg:h-[350px]  md:w-full lg:w-full relative group" key={index}
+                  data-aos-delay={index*100}
+                  data-aos="zoom-in-up"
+                  >
     <Image 
       src={`${person.image}`} 
       alt='image' 
